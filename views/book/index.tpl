@@ -37,8 +37,10 @@
                     <div class="box-head">
                         <strong class="box-title">项目列表</strong>
                         &nbsp;
+                        {{if eq .Member.Role 0 }}
                         <button type="button" data-toggle="modal" data-target="#addBookDialogModal" class="btn btn-success btn-sm pull-right">添加项目</button>
                         <button type="button" data-toggle="modal" data-target="#importBookDialogModal" class="btn btn-primary btn-sm pull-right" style="margin-right: 5px;">导入项目</button>
+                        {{end}}
                     </div>
                 </div>
                 <div class="box-body" id="bookList">
